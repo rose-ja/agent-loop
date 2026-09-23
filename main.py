@@ -1,5 +1,10 @@
-import run_agent from "./agent/run_agent.py";
+from agent.run_agent import run_agent
 
-def main():
-    user_input = "请帮我查询北京的天气"
-    run_agent(user_input)
+
+def main() -> None:
+    state = run_agent("请帮我查询北京的天气")
+    print(state)
+
+
+if __name__ == "__main__":
+    main()
